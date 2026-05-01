@@ -1,0 +1,2 @@
+ALTER TABLE users ADD COLUMN IF NOT EXISTS blur_hashed_string TEXT;
+ALTER TABLE users DROP COLUMN IF EXISTS file_url;
