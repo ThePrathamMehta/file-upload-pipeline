@@ -1,0 +1,25 @@
+{
+  "name": "file-upload-pipeline",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "migrate": "bun run src/db/migration.ts",
+    "start" : "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.1.0",
+    "@types/pg": "^8.20.0",
+    "express": "^5.2.1",
+    "file-type": "^22.0.1",
+    "multer": "^2.1.1",
+    "pg": "^8.20.0",
+    "zod": "^4.4.1"
+  }
+}
